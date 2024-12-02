@@ -1,0 +1,146 @@
+[
+	{
+		"id": 1,
+		"description": "Is the string uppercase?",
+		"algorithm": "Create a method to see whether the string is ALL CAPS.",
+		"solution": "String.prototype.isUpperCase=function() {return this==this.toUpperCase()}"
+	},
+	{
+		"id": 2,
+		"description": "Calculate the sum of numbers in a list.",
+		"algorithm": "function sum(list) {\n  let total = 0;\n  for (let num of list) {\n    total += num;\n  }\n  return total;\n}",
+		"solution": "sum([1, 2, 3, 4, 5]) = 15"
+	},
+	{
+		"id": 3,
+		"description": "Find the smallest number in a list.",
+		"algorithm": "function findMin(list) {\n  let min = list[0];\n  for (let num of list) {\n    if (num < min) {\n      min = num;\n    }\n  }\n  return min;\n}",
+		"solution": "findMin([1, 2, 3, 4, 5]) = 1"
+	},
+	{
+		"id": 4,
+		"description": "Check if a number is even.",
+		"algorithm": "function isEven(number) {\n  return number % 2 === 0;\n}",
+		"solution": "isEven(4) = true"
+	},
+	{
+		"id": 5,
+		"description": "Calculate the factorial of a number.",
+		"algorithm": "function factorial(n) {\n  if (n === 0) return 1;\n  return n * factorial(n - 1);\n}",
+		"solution": "factorial(5) = 120"
+	},
+	{
+		"id": 6,
+		"description": "Reverse a string.",
+		"algorithm": "function reverseString(str) {\n  let reversed = '';\n  for (let i = str.length - 1; i >= 0; i--) {\n    reversed += str[i];\n  }\n  return reversed;\n}",
+		"solution": "reverseString('abc') = 'cba'"
+	},
+	{
+		"id": 7,
+		"description": "Calculate the average of a list of numbers.",
+		"algorithm": "function average(list) {\n  let total = sum(list);\n  return total / list.length;\n}",
+		"solution": "average([1, 2, 3, 4, 5]) = 3"
+	},
+	{
+		"id": 8,
+		"description": "Count the number of vowels in a string.",
+		"algorithm": "function countVowels(str) {\n  let count = 0;\n  for (let char of str) {\n    if ('aeiouAEIOU'.includes(char)) {\n      count++;\n    }\n  }\n  return count;\n}",
+		"solution": "countVowels('hello') = 2"
+	},
+	{
+		"id": 9,
+		"description": "Merge two sorted lists.",
+		"algorithm": "function mergeSorted(list1, list2) {\n  let merged = [];\n  let i = 0, j = 0;\n  while (i < list1.length && j < list2.length) {\n    if (list1[i] < list2[j]) {\n      merged.push(list1[i]);\n      i++;\n    } else {\n      merged.push(list2[j]);\n      j++;\n    }\n  }\n  return merged.concat(list1.slice(i)).concat(list2.slice(j));\n}",
+		"solution": "mergeSorted([1, 3, 5], [2, 4, 6]) = [1, 2, 3, 4, 5, 6]"
+	},
+	{
+		"id": 10,
+		"description": "Determine if a string is a palindrome.",
+		"algorithm": "function isPalindrome(str) {\n  const reversed = reverseString(str);\n  return str === reversed;\n}",
+		"solution": "isPalindrome('aba') = true"
+	},
+	{
+		"id": 11,
+		"description": "Count the occurrences of an element in a list.",
+		"algorithm": "function countOccurrences(list, element) {\n  let count = 0;\n  for (let item of list) {\n    if (item === element) {\n      count++;\n    }\n  }\n  return count;\n}",
+		"solution": "countOccurrences([1, 2, 2, 3, 4], 2) = 2"
+	},
+	{
+		"id": 12,
+		"description": "Find the length of a string.",
+		"algorithm": "function stringLength(str) {\n  let count = 0;\n  for (let char of str) {\n    count++;\n  }\n  return count;\n}",
+		"solution": "stringLength('hello') = 5"
+	},
+	{
+		"id": 13,
+		"description": "Check if a word is present in a sentence.",
+		"algorithm": "function isWordPresent(sentence, word) {\n  return sentence.includes(word);\n}",
+		"solution": "isWordPresent('Hello world', 'Hello') = true"
+	},
+	{
+		"id": 14,
+		"description": "Calculate the power of a number.",
+		"algorithm": "function power(base, exponent) {\n  if (exponent === 0) return 1;\n  return base * power(base, exponent - 1);\n}",
+		"solution": "power(2, 3) = 8"
+	},
+	{
+		"id": 15,
+		"description": "Find the difference between two lists.",
+		"algorithm": "function difference(list1, list2) {\n  return list1.filter(item => !list2.includes(item));\n}",
+		"solution": "difference([1, 2, 3], [2, 3]) = [1]"
+	},
+	{
+		"id": 16,
+		"description": "Calculate the sum of the digits of a number.",
+		"algorithm": "function sumDigits(number) {\n  let sum = 0;\n  while (number > 0) {\n    sum += number % 10;\n    number = Math.floor(number / 10);\n  }\n  return sum;\n}",
+		"solution": "sumDigits(123) = 6"
+	},
+	{
+		"id": 17,
+		"description": "Create a list of numbers from 1 to n.",
+		"algorithm": "function listFromOneToN(n) {\n  let list = [];\n  for (let i = 1; i <= n; i++) {\n    list.push(i);\n  }\n  return list;\n}",
+		"solution": "listFromOneToN(5) = [1, 2, 3, 4, 5]"
+	},
+	{
+		"id": 18,
+		"description": "Find the product of numbers in a list.",
+		"algorithm": "function product(list) {\n  let total = 1;\n  for (let num of list) {\n    total *= num;\n  }\n  return total;\n}",
+		"solution": "product([1, 2, 3, 4]) = 24"
+	},
+	{
+		"id": 19,
+		"description": "Filter even numbers from a list.",
+		"algorithm": "function filterEvens(list) {\n  return list.filter(num => num % 2 === 0);\n}",
+		"solution": "filterEvens([1, 2, 3, 4, 5]) = [2, 4]"
+	},
+	{
+		"id": 20,
+		"description": "Sort a list of numbers.",
+		"algorithm": "function sortList(list) {\n  return list.sort((a, b) => a - b);\n}",
+		"solution": "sortList([3, 2, 1]) = [1, 2, 3]"
+	},
+	{
+		"id": 21,
+		"description": "Remove duplicates from a list.",
+		"algorithm": "function removeDuplicates(list) {\n  return Array.from(new Set(list));\n}",
+		"solution": "removeDuplicates([1, 2, 2, 3]) = [1, 2, 3]"
+	},
+	{
+		"id": 22,
+		"description": "Convert a string to uppercase.",
+		"algorithm": "function toUpperCase(str) {\n  return str.toUpperCase();\n}",
+		"solution": "toUpperCase('hello') = 'HELLO'"
+	},
+	{
+		"id": 23,
+		"description": "Calculate the number of days between two dates.",
+		"algorithm": "function daysBetween(date1, date2) {\n  const diffTime = Math.abs(new Date(date2) - new Date(date1));\n  return Math.ceil(diffTime / (1000 * 60 * 60 * 24));\n}",
+		"solution": "daysBetween('2023-01-01', '2023-01-10') = 9"
+	},
+	{
+		"id": 24,
+		"description": "Find the first element of a list.",
+		"algorithm": "function firstElement(list) {\n  return list.length ? list[0] : undefined;\n}",
+		"solution": "firstElement([1, 2, 3]) = 1"
+	}
+]

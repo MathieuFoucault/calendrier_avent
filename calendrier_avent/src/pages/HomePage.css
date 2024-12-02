@@ -1,0 +1,18 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	gap: 0.5em;
+	margin: 0 1em 0 1em;
+	grid-template-areas:
+		"card1 card2 card3 card4 card5 card6"
+		"card7 card8 card9 card10 card11 card12"
+		"card13 card14 card15 card16 card17 card18"
+		"card19 card20 card21 card22 card23 card24";
+}
+
+@media (max-width: 570px) {
+	.grid-container {
+		margin: 0 0 0 3.5em;
+	}
+}

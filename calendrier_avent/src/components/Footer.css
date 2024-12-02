@@ -1,0 +1,55 @@
+.footer {
+	background: transparent;
+	padding: 2rem;
+	text-align: center;
+}
+
+.footer p {
+	margin-top: 0;
+	font-size: 0.9rem;
+	opacity: 0.8;
+	color: rgb(236, 233, 233);
+}
+
+.contact {
+	padding: 4rem 0;
+}
+
+.contact-buttons {
+	display: flex;
+
+	gap: 1rem;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.contact-button {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	transition: var(--transition);
+}
+
+.contact-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.contact-button span {
+	font-weight: 500;
+}
+
+/* Desktop styles */
+@media (max-width: 570px) {
+	.footer {
+		padding: 0em;
+	}
+	.footer p {
+		margin: 0 0 1em 7em;
+	}
+}

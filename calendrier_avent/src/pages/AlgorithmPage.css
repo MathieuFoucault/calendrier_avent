@@ -1,0 +1,8 @@
+.algorithm-page {
+	background-image: url("https://t4.ftcdn.net/jpg/02/94/71/81/360_F_294718149_aIizeIOQuJAK2K79oJ7C0Ck0xTaDTxOu.jpg");
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

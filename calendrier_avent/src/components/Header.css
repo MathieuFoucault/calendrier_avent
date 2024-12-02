@@ -1,0 +1,76 @@
+:root {
+	--animation-timing: 20s;
+	--font-family: Inter, "Mountains of Christmas";
+}
+
+header {
+	text-align: center;
+	margin: 1em 0;
+}
+
+h1 {
+	font-family: var(--font-family);
+	color: rgb(255, 255, 255);
+	margin: 0;
+	font-size: 7em;
+	text-align: center;
+	pointer-events: none;
+	font-weight: 700;
+	text-shadow: 0 0 5px rgba(193, 202, 255, 0.8), 0 0 10px
+		rgba(193, 202, 255, 0.7), 0 0 15px rgba(193, 199, 255, 0.6), 0 0 20px
+		rgba(193, 202, 255, 0.5), 0 0 10px rgba(193, 199, 255, 0.4);
+
+	animation: neonBlink 1.5s infinite alternate;
+}
+
+@keyframes neonBlink {
+	0% {
+		text-shadow: 0 0 5px rgba(193, 202, 255, 0.8), 0 0 10px
+			rgba(193, 202, 255, 0.7), 0 0 15px rgba(193, 199, 255, 0.6), 0 0 20px
+			rgba(193, 202, 255, 0.5), 0 0 10px rgba(193, 199, 255, 0.4);
+	}
+	25% {
+		text-shadow: 0 0 3px rgba(193, 202, 255, 0.9), 0 0 6px
+			rgba(193, 202, 255, 0.8), 0 0 9px rgba(193, 199, 255, 0.7), 0 0 12px
+			rgba(193, 202, 255, 0.6), 0 0 15px rgba(193, 199, 255, 0.5);
+	}
+	50% {
+		text-shadow: none;
+	}
+	75% {
+		text-shadow: 0 0 3px rgba(193, 202, 255, 0.9), 0 0 6px
+			rgba(193, 202, 255, 0.8), 0 0 9px rgba(193, 199, 255, 0.7), 0 0 12px
+			rgba(193, 202, 255, 0.6), 0 0 15px rgba(193, 199, 255, 0.5);
+	}
+	100% {
+		text-shadow: 0 0 5px rgba(193, 202, 255, 0.8), 0 0 10px
+			rgba(193, 202, 255, 0.7), 0 0 15px rgba(193, 199, 255, 0.6), 0 0 20px
+			rgba(193, 202, 255, 0.5), 0 0 10px rgba(193, 199, 255, 0.4);
+	}
+}
+
+h2 {
+	font-family: var(--font-family);
+	color: rgb(255, 255, 255);
+	font-size: 5em;
+	text-align: center;
+	pointer-events: none;
+	font-weight: 300;
+	text-shadow: 0 0 5px rgba(193, 202, 255, 0.8), 0 0 10px
+		rgba(193, 202, 255, 0.7), 0 0 15px rgba(193, 199, 255, 0.6), 0 0 20px
+		rgba(193, 202, 255, 0.5), 0 0 10px rgba(193, 199, 255, 0.4);
+
+	animation: neonBlink 1.5s infinite alternate;
+	margin: 0.5em 0 0.5em 0;
+}
+
+@media (max-width: 570px) {
+	h1 {
+		font-size: 4.5em;
+		margin: 0 0 0.5em 2em;
+	}
+	h2 {
+		font-size: 3.5em;
+		margin: 0 0 0.5em 2.5em;
+	}
+}

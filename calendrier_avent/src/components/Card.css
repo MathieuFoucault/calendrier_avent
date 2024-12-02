@@ -1,0 +1,155 @@
+.card {
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 20px;
+	text-align: center;
+	background-color: #38aa06eb;
+	transition: background-color 0.3s;
+	border-radius: 10px;
+	color: rgba(227, 225, 225, 0.918);
+	font-size: large;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	box-shadow:
+		inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+		7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+		4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+
+.card:hover {
+	background-color: #44d904eb;
+}
+
+.card1 {
+	grid-column: span 2 / span 2;
+	grid-column-start: 4;
+	grid-row-start: 2;
+}
+
+.card2 {
+	grid-row: span 2 / span 2;
+	grid-column-start: 4;
+	grid-row-start: 3;
+}
+
+.card3 {
+	grid-column: span 2 / span 2;
+	grid-column-start: 5;
+	grid-row-start: 4;
+}
+
+.card4 {
+	grid-column-start: 5;
+	grid-row-start: 3;
+}
+
+.card5 {
+	grid-row: span 2 / span 2;
+	grid-column-start: 6;
+	grid-row-start: 2;
+}
+
+.card6 {
+	grid-column-start: 4;
+	grid-row-start: 1;
+}
+
+.card7 {
+	grid-column: span 2 / span 2;
+	grid-column-start: 5;
+	grid-row-start: 1;
+}
+
+.card8 {
+	grid-column-start: 7;
+	grid-row-start: 1;
+}
+
+.card9 {
+	grid-column-start: 7;
+	grid-row-start: 2;
+}
+
+.card10 {
+	grid-row: span 2 / span 2;
+	grid-column-start: 7;
+	grid-row-start: 3;
+}
+
+.card11 {
+	grid-column-start: 6;
+	grid-row-start: 5;
+}
+
+.card12 {
+	grid-column-start: 5;
+	grid-row-start: 5;
+}
+
+.card13 {
+	grid-column: span 2 / span 2;
+	grid-column-start: 3;
+	grid-row-start: 5;
+}
+
+.card14 {
+	grid-column-start: 2;
+	grid-row-start: 5;
+}
+
+.card15 {
+	grid-column-start: 3;
+	grid-row-start: 4;
+}
+
+.card16 {
+	grid-row: span 2 / span 2;
+	grid-column-start: 3;
+	grid-row-start: 2;
+}
+
+.card17 {
+	grid-column: span 2 / span 2;
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+
+.card18 {
+	grid-column-start: 2;
+	grid-row-start: 3;
+}
+
+.card19 {
+	grid-column: span 2 / span 2;
+	grid-column-start: 1;
+	grid-row-start: 4;
+}
+
+.card20 {
+	grid-column-start: 1;
+	grid-row-start: 5;
+}
+
+.card21 {
+	grid-column-start: 1;
+	grid-row-start: 3;
+}
+
+.card22 {
+	grid-row: span 2 / span 2;
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+.card23 {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+
+.card24 {
+	grid-column-start: 7;
+	grid-row-start: 5;
+}
